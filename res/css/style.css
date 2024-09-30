@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(204, 204, 204);
+    padding: 10px 15px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: 6px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 10%;
+    border: 10% 10%;
+    height: 300px;
+    background-color: rgb(225, 222, 222);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6%;
+}
+
+.newPost {
+    display: flex;
+    flex-direction: row;
+}
+
+.newPost label {
+    padding: 5% 5%;
+}
+
+.newPost .button {
+    color: white;
+    background-color: rgb(15, 49, 141);
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/style.css">
     <title>Add Post</title>
 </head>
 <body>
@@ -12,14 +13,20 @@
     </header>
 
     <form>
-        <label for="postBody"> Post body</label>
-        <input type="text" name="postBody" placeholder="textarea"><br>
+        <section class="newPost">
+             <label for="postBody"> Post body</label>
+             <input type="text" name="postBody" placeholder="textarea"><br>
+            </section>
+        
+        <section class="newPost">
+            <label for="selFile"> Select file</label>
+            <input type="file" name="selFile"><br> 
+        </section>
 
-        <label for="selFile"> Select file</label>
-        <input type="file" name="selFile"><br> 
-
-        <label for="createPost"></label>
-        <input type="button" value="Create post">
+        <section class="newPost">
+            <label for="createPost"></label>
+            <input class="button" type="button" value="Create post">
+        </section>   
     </form>
 </body>
 </html>
