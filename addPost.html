@@ -8,24 +8,24 @@
 </head>
 <body>
     <header class="header">
-        <strong> Home </strong>
+        <a href="index.html" class="nav-link" id="home-link">Home</a>
         <a class="profilepic" href="#"><img src="res/images/profilepic.webp" width="50" height="50" alt="My profile picture"></a>
     </header>
 
     <form>
         <section class="newPost">
-             <label for="postBody"> Post body</label>
-             <input type="text" name="postBody" placeholder="textarea"><br>
+             <label class="PBLabel" for="postBody"> Post body</label>
+             <input class="postB" type="text" name="postBody" placeholder="textarea"><br>
             </section>
         
         <section class="newPost">
-            <label for="selFile"> Select file</label>
-            <input type="file" name="selFile"><br> 
+            <label for="selFile"> Select <br> file</label>
+            <input id="fileB" type="button" name="selFile" value="Choose file"><br> 
         </section>
 
-        <section class="newPost">
+        <section class="newPost" id="newPostC">
             <label for="createPost"></label>
-            <input class="button" type="button" value="Create post">
+            <input class="button" type="button" onclick="location.href='index.html'" value="Create post">
         </section>   
     </form>
 </body>
