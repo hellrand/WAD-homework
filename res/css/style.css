@@ -285,3 +285,8 @@ LOGIN PAGE STYLING
 #login-button-space {
     line-height: 3.5;
 }
+
+/* Spaces form input elements out in the login section */
+.login-section input ~ input {
+    margin: 5px;
+}
