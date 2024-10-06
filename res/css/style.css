@@ -216,12 +216,11 @@ LOGIN PAGE STYLING
 /* Styling for the rectangle in which the login form will be present */
 .login-section {
     text-align: center;
-    background-color: rgb(231, 230, 230, 0.722);
+    background-color: rgb(216, 216, 216);
     padding: 10px;
     margin: 10px;
     width: 400px;
-    border-radius: 25px;
-    border-style: solid;
+    border-radius: 20px;
 }
 
 /* Styling for centering the login-section */
@@ -235,6 +234,9 @@ LOGIN PAGE STYLING
 /* Spacing out form fields */
 .login-section > form {
     line-height: 1.5;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  rgb(204, 204, 204);;
 }
 
 /* Spacing so that the forgotten password button is a bit farther away from other elements */
