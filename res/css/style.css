@@ -12,6 +12,7 @@ body {
 header {
     background-color: rgba(238, 238, 238, 0.722);
     padding: 10px;
+    border-radius: 8px;
 }
 
 nav {
@@ -113,6 +114,7 @@ main {
 footer {
     background-color: rgba(238, 238, 238, 0.722);
     padding: 20px;
+    line-height: 1.5;
 }
 
 
@@ -149,11 +151,15 @@ form {
     flex-direction: column;
     margin: 10% auto;
     padding: 3%;
-    width: 550px;
+    width: 60%;
     background-color: rgba(231, 230, 230, 0.722);
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+}
+
+#addPost{
+    width: 550px;
 }
 
 #PBLabel {
@@ -209,7 +215,7 @@ label + textarea {
 }
 
 @media (max-width: 650px){
-    form{
+    #addPost{
         width: 400px;
     }
 
