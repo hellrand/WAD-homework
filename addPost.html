@@ -21,16 +21,16 @@
 
     <form>
         <section class="newPost">
-             <label class="PBLabel" for="postBody"> Post body</label>
+             <label id="PBLabel" for="postBody"> Post body</label>
              <textarea type="text" name="postBody" placeholder="textarea"></textarea>
             </section>
         
-        <section class="newPost">
-            <label for="selFile"> Select file</label>
+        <section class="newPost" id="newPostF">
+            <label for="selFile" id="FLabel"> Select file</label>
             <input id="fileB" type="button" name="selFile" value="Choose file"><br> 
         </section>
 
-        <section class="newPost" id="newPostC">
+        <section class="newPost">
             <label for="createPost"></label>
             <input class="button" type="button" onclick="location.href='index.html'" value="Create post">
         </section>   

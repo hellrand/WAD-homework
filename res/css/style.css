@@ -146,7 +146,7 @@ form {
     border-radius: 25px;
 }
 
-.PBLabel {
+#PBLabel {
     height: 100px;
     display: flex;
     align-items: flex-start;
@@ -164,7 +164,7 @@ label + textarea {
 .newPost {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 5px;
@@ -172,20 +172,22 @@ label + textarea {
     border-radius: 4px;
 }
 
-#newPostC{
-    justify-content: center;
+#newPostF{
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #fileB {
     color: rgb(232, 232, 232);
     background-color: rgb(155, 155, 155);
     padding: 5px;
-    margin-left: 13px;
+    margin-left: 3%;
     margin-bottom: 10px;
     border: 1px solid #878787;
     border-radius: 4px;
     letter-spacing: 2px;
 }
+
 .newPost .button {
     display: flex;
     color: rgb(215, 228, 233);
@@ -201,7 +203,20 @@ label + textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-style: line;
+
+    }
+
+    #fileB {
+        margin-left: 0px;
+    }
+
+    #PBLabel{
+        height: fit-content;
+        margin-bottom: 5%;
+    }
+
+    #FLabel{
+        margin-bottom: 5%;
     }
 }
 
