@@ -149,7 +149,7 @@ form {
     flex-direction: column;
     margin: 10% auto;
     padding: 3%;
-    width: 60%;
+    width: 550px;
     background-color: rgba(231, 230, 230, 0.722);
     justify-content: center;
     align-items: center;
@@ -209,11 +209,14 @@ label + textarea {
 }
 
 @media (max-width: 650px){
+    form{
+        width: 400px;
+    }
+
     .newPost {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     #fileB {
