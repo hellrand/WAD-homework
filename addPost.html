@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/style.css">
+    <title>Add Post</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="nav-link" id="home-link">Home</a>
+        <a class="profilepic" href="#"><img src="res/images/profilepic.webp" width="50" height="50" alt="My profile picture"></a>
+    </header>
 
+    <form>
+        <section class="newPost">
+             <label class="PBLabel" for="postBody"> Post body</label>
+             <textarea type="text" name="postBody" placeholder="textarea"></textarea>
+            </section>
+        
+        <section class="newPost">
+            <label for="selFile"> Select file</label>
+            <input id="fileB" type="button" name="selFile" value="Choose file"><br> 
+        </section>
+
+        <section class="newPost" id="newPostC">
+            <label for="createPost"></label>
+            <input class="button" type="button" onclick="location.href='index.html'" value="Create post">
+        </section>   
+    </form>
+</body>
+</html>
