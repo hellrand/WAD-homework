@@ -6,8 +6,6 @@ LOGIN PAGE STYLING
 ----------------------------------------
 */
 
-
-
 /* Styling for the rectangle in which the login form will be present */
 .login-section {
     text-align: center;
@@ -40,6 +38,13 @@ LOGIN PAGE STYLING
 /* Making the login button more prominent on the page */
 #login-button {
     padding: 10px 20px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 2px;
 }
 
 /* Makes the login button larger when hovering over it */
