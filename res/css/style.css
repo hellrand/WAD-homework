@@ -198,7 +198,7 @@ label + textarea {
     border: none;
 }
 
-@media (max-width: 500px){
+@media (max-width: 650px){
     .newPost {
         display: flex;
         flex-direction: column;
