@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -14,7 +13,6 @@ header {
     background-color: rgba(238, 238, 238, 0.722);
     padding: 10px;
 }
-
 
 nav {
     display: flex;
@@ -142,7 +140,7 @@ form {
     margin: 10% auto;
     padding: 3%;
     width: 60%;
-    background-color: rgba(228, 228, 228, 0.722);
+    background-color: rgba(231, 230, 230, 0.722);
     justify-content: center;
     align-items: center;
     border-radius: 25px;
@@ -161,7 +159,6 @@ label + textarea {
     margin-bottom: 10px;
     border: 1px solid #aaa;
     border-radius: 4px;
-    font-size: medium;
 }
 
 .newPost {
@@ -191,8 +188,8 @@ label + textarea {
 }
 .newPost .button {
     display: flex;
-    color: rgb(255, 255, 255);
-    background-color: #008CBA;
+    color: rgb(215, 228, 233);
+    background-color: rgb(15, 49, 141);
     border-radius: 4px;
     height: 30px;
     letter-spacing: 2px;
@@ -219,7 +216,7 @@ LOGIN PAGE STYLING
 /* Styling for the rectangle in which the login form will be present */
 .login-section {
     text-align: center;
-    background-color: rgb(228, 228, 228, 0.722);
+    background-color: rgb(231, 230, 230, 0.722);
     padding: 10px;
     margin: 10px;
     width: 400px;
