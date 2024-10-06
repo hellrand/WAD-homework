@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <meta name="description" content="Login page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/res/css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <strong> <a class="Home" href="index.html">Home</a> </strong>
+            <a class="profilepic" href="#"><img src="res/images/profilepic.webp" width="50" height="50" alt="My profile picture"></a> <!--https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png-->
+        </header>
+        
+        <div id="login-div">
+            <section class="login-section">
+                
+                <h2><strong>Welcome to PostIt</strong></h2>
 
+                <a href="#">Create an account</a>
+
+                <p>or <br> Please log in</p>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Email" required><br>
+                    <input type="password" name="password" id="password" placeholder="Password" required><br>
+                    
+                    <div id = "login-button-space">
+                    <input type="submit" value="Login" id="login-button" onclick="location.href='index.html'" disabled="disabled">
+                    </div>
+                </form>
+
+                <a href="#" id="forgot-password">Forgot password?</a>
+            </section>
+        </div>
+
+        <!--Code snippet from https://stackoverflow.com/questions/69386541/how-to-disable-submit-button-until-all-mandatory-fields-are-filled-using-html-an-->
+        <!--Checks if login form has been filled before submission-->
+        <script>
+            let inputs = document.querySelectorAll('input');
+            let buttonSend = document.getElementById('login-button');
+
+            let inputValidator = {
+                "email": false,
+                "password": false
+            }
+
+            inputs.forEach((input) => {
+                input.addEventListener('input', () => {
+                    let name = event.target.getAttribute('name');
+                    if (event.target.value.length > 0) {
+                        inputValidator[name] = true;
+                    } else {
+                        inputValidator[name] = false;
+                    };
+
+                    let allTrue = Object.keys(inputValidator).every((item) => {
+                        return inputValidator[item] === true
+                    });
+
+                    if (allTrue) {
+                        buttonSend.disabled = false;
+                    } else {
+                        buttonSend.disabled = true;
+                    }
+                })
+                })
+        </script>
+    </body>
+</html>

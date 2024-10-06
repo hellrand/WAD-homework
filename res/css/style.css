@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -95,3 +96,63 @@ label + textarea {
         border-style: line;
     }
 }
+
+/* 
+----------------------------------------
+
+LOGIN PAGE STYLING
+
+----------------------------------------
+*/
+
+/* Styling for the rectangle in which the login form will be present */
+.login-section {
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    border-radius: 25px;
+    border-style: solid;
+}
+
+/* Styling for centering the login-section */
+#login-div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+/* Spacing out form fields */
+.login-section > form {
+    line-height: 1.5;
+}
+
+/* Spacing so that the forgotten password button is a bit farther away from other elements */
+#forgot-password {
+    line-height: 2.5;
+}
+
+/* Making the login button more prominent on the page */
+#login-button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+/* Makes the login button larger when hovering over it */
+#login-button:hover {
+    transform: scale(1.1);
+}
+
+/* Spaces out the login button from the rest of the form inputs */
+#login-button-space {
+    line-height: 3.5;
+}
+
