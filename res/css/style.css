@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
     display: flex;
@@ -10,7 +13,6 @@ header {
     background-color: rgba(238, 238, 238, 0.722);
     padding: 10px;
 }
-
 
 nav {
     display: flex;
@@ -29,28 +31,6 @@ nav ul li {
     margin-right: 20px;
 }
 
-/* 
-----------------------------------------
-
-ADD POST PAGE STYLING
-
-----------------------------------------
-*/
-* {
-    box-sizing: border-box;
-}
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(204, 204, 204);
-    padding: 10px 15px;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    border-radius: 6px;
-}
-
 .nav-link {
     text-decoration: none;
     color: black;
@@ -62,7 +42,6 @@ ADD POST PAGE STYLING
     border: 1px;
     border-radius: 5px;
 }
-
 
 .profile-login {
     width: 40px;
@@ -161,7 +140,7 @@ form {
     margin: 10% auto;
     padding: 3%;
     width: 60%;
-    background-color: rgb(216, 216, 216);
+    background-color: rgba(231, 230, 230, 0.722);
     justify-content: center;
     align-items: center;
     border-radius: 25px;
@@ -214,6 +193,7 @@ label + textarea {
     border-radius: 4px;
     height: 30px;
     letter-spacing: 2px;
+    border: none;
 }
 
 @media (max-width: 500px){
