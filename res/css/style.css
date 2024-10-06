@@ -261,12 +261,17 @@ LOGIN PAGE STYLING
     transform: scale(1.1);
 }
 
-/* Spaces out the login button from the rest of the form inputs */
-#login-button-space {
-    line-height: 3.5;
-}
-
 /* Spaces form input elements out in the login section */
 .login-section input ~ input {
     margin: 5px;
+}
+
+/* Login section compatibility with cellphones/small screens */
+@media (max-width: 450px) {
+    .login-section input {
+        width: 125px;
+    }
+    #login-button {
+        width: 75px;
+    }
 }
