@@ -12,6 +12,7 @@ body {
 header {
     background-color: rgba(238, 238, 238, 0.722);
     padding: 10px;
+    border-radius: 10px;
 }
 
 nav {
@@ -50,6 +51,14 @@ nav ul li {
     margin-right: 20px;
 }
 
+/* 
+----------------------------------------
+
+INDEX PAGE STYLING
+
+----------------------------------------
+*/
+
 main {
     flex: 1;
     padding: 20px;
@@ -57,6 +66,7 @@ main {
     flex-direction: column;
 }
 
+/* general styling for individual posts */
 .post {
     width: 60%;
     margin: 0 auto;
@@ -69,11 +79,13 @@ main {
     background-color: rgba(238, 238, 238, 0.722);
 }
 
+/* keeps the post content centered and within the post layout */
 .post-content {
     width: 98%;
     margin: 0 auto;
 }
 
+/* aligns the header (profile picture and date) in the post */
 .post-header {
     display: flex;
     align-items: center;
@@ -87,12 +99,14 @@ main {
     border-radius: 50%;
 }
 
+/* date is placed in the top right of the post and styled */
 .date {
     
     color: #555;
     margin-right: 5px;
 }
 
+/* centeres the post image */
 .post-image img {
     width: 100%;
     height: auto;
@@ -100,10 +114,12 @@ main {
     margin: 0 auto;
 }
 
+/* spacing between image and text */
 .post-text {
     margin-top: 10px;
 }
 
+/* styles the like button with hover functionality */
 .like-button {
     margin-top: 10px;
     font-size: 24px;
@@ -113,15 +129,21 @@ main {
 footer {
     background-color: rgba(238, 238, 238, 0.722);
     padding: 20px;
+    border-radius: 10px;
 }
 
+footer > p {
+    margin-left: 30px;
+}
 
+/* adjusts main content padding for smaller devices */
 @media (max-width: 768px) {
     main {
         padding: 10px;
     }
 }
 
+/* responsive design for phone-sized screens, so the posts will occupy 80% of the screen width and the navigation bar would look better */
 @media (max-width: 450px) {
     ul li {
         display: flex;
@@ -138,11 +160,20 @@ footer {
     }
 }
 
+/* design for larger screens, so the posts will occupy 40% of the screen width */
 @media (min-width: 1150px) {
     .post {
         width: 40%;
     }
 }
+
+/* 
+----------------------------------------
+
+ADD PAGE STYLING
+
+----------------------------------------
+*/
 
 form {
     display: flex;
