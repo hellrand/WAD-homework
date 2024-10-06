@@ -262,13 +262,13 @@ LOGIN PAGE STYLING
 /* Making the login button more prominent on the page */
 #login-button {
     padding: 10px 20px;
-    background-color: #008CBA;
+    background-color: rgb(15, 49, 141);
     border: none;
     color: white;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 /* Makes the login button larger when hovering over it */
@@ -276,7 +276,17 @@ LOGIN PAGE STYLING
     transform: scale(1.1);
 }
 
-/* Spaces out the login button from the rest of the form inputs */
-#login-button-space {
-    line-height: 3.5;
+/* Spaces form input elements out in the login section */
+.login-section input ~ input {
+    margin: 5px;
+}
+
+/* Login section compatibility with cellphones/small screens */
+@media (max-width: 450px) {
+    .login-section input {
+        width: 125px;
+    }
+    #login-button {
+        width: 75px;
+    }
 }
