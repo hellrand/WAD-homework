@@ -1,5 +1,14 @@
-// fetch JSON data from the GitHub Gist
+// fetches JSON data from the GitHub Gist
+/** 
 fetch('https://gist.githubusercontent.com/Scarch/a6fbfab87a2a5ce7862cc7d282a47b24/raw')
+        .then((response) => response.json())
+        .then(json => {
+            createPosts(json);
+        })
+        .catch(error => console.error("Error fetching posts:", error));*/
+
+// fetches data from the local JSON file
+fetch('./res/json/posts.json')
         .then((response) => response.json())
         .then(json => {
             createPosts(json);
