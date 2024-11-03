@@ -1,6 +1,6 @@
 
-fetch('https://gist.githubusercontent.com/Scarch/a6fbfab87a2a5ce7862cc7d282a47b24/raw') // fetches JSON data from GitHub Gist
-//fetch('./res/json/posts.json') // fetches data from the local JSON file
+//fetch('https://gist.githubusercontent.com/Scarch/a6fbfab87a2a5ce7862cc7d282a47b24/raw') // fetches JSON data from GitHub Gist
+fetch('./res/json/posts.json') // fetches data from the local JSON file
         .then((response) => response.json())
         .then(json => {
             createPosts(json);
