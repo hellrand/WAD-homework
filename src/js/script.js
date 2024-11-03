@@ -1,19 +1,15 @@
-// fetches JSON data from the GitHub Gist
-/** 
-fetch('https://gist.githubusercontent.com/Scarch/a6fbfab87a2a5ce7862cc7d282a47b24/raw')
-        .then((response) => response.json())
-        .then(json => {
-            createPosts(json);
-        })
-        .catch(error => console.error("Error fetching posts:", error));*/
 
-// fetches data from the local JSON file
-fetch('./res/json/posts.json')
+fetch('https://gist.githubusercontent.com/Scarch/a6fbfab87a2a5ce7862cc7d282a47b24/raw') // fetches JSON data from GitHub Gist
+//fetch('./res/json/posts.json') // fetches data from the local JSON file
         .then((response) => response.json())
         .then(json => {
             createPosts(json);
         })
         .catch(error => console.error("Error fetching posts:", error));
+
+// JSON was formatted using https://jsoneditoronline.org/
+// And validated with https://jsonlint.com/, https://jsonformatter.curiousconcept.com/, https://jsonformatter.org/
+// Using GitHub Gist to store the JSON file online at https://gist.githubusercontent.com/Scarch/a6fbfab87a2a5ce7862cc7d282a47b24
 
 // function to create posts with the fetched JSON data
 function createPosts(posts) {
