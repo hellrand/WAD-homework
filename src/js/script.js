@@ -1,9 +1,3 @@
-// dropdown menu
-function dropdown() {
-    document.getElementById("dropdown").classList.toggle("show");
-}
-
-
 // fetches JSON data from the GitHub Gist
 /** 
 fetch('https://gist.githubusercontent.com/Scarch/a6fbfab87a2a5ce7862cc7d282a47b24/raw')
